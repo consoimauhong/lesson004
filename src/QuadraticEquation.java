@@ -26,7 +26,7 @@ public class QuadraticEquation {
         }
     }
 
-    private double a, b, c;
+    private double a, b, c,delta;
 
     //constructor tao khong co tham so
     public QuadraticEquation(double a,double b,double c){
@@ -52,6 +52,10 @@ public class QuadraticEquation {
     }
     public double getC(){
         return this.c;
+    }
+    public double getDiscriminant(){
+        this.delta = this.b*b - 4*this.a*this.c;
+        return this.delta;
     }
 
 }
